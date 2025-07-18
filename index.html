@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeEarn - Monetag Mini App</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Welcome to SafeEarn</h1>
+    <p>Click the button below to start earning rewards</p>
+    <button onclick="startAds()">Start Now</button>
+  </div>
+
+  <footer>© 2025 SafeEarn | Powered by Monetag</footer>
+
+  <!-- ✅ Push Notification (Zone: 9589439) -->
+  <script>
+    (s => {
+      s.dataset.zone = '9589439';
+      s.src = 'https://al5sm.com/tag.min.js';
+    })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+  </script>
+
+  <!-- ✅ Interstitial Ad (Zone: 9589436) -->
+  <script>
+    (function(d,z,s){
+      s.src='https://'+d+'/401/'+z;
+      try{(document.body||document.documentElement).appendChild(s)}
+      catch(e){}
+    })('groleegni.net',9589436,document.createElement('script'));
+  </script>
+
+  <!-- ✅ Popunder Ad (Zone: 9589429) -->
+  <script>
+    function startAds() {
+      // Popunder will trigger on click
+      (s => {
+        s.dataset.zone = '9589429';
+        s.src = 'https://al5sm.com/tag.min.js';
+      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+
+      alert("Thanks for starting. Ads will appear soon if available.");
+    }
+  </script>
+</body>
+</html>
