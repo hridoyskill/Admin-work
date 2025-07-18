@@ -5,38 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SafeEarn - Monetag Mini App</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f4f4;
-      margin: 0;
+      background-color: #f2f2f2;
       display: flex;
-      justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      justify-content: center;
+      height: 100vh;
     }
 
-    .container {
-      background: #fff;
-      padding: 30px;
+    .wrapper {
+      background-color: #ffffff;
+      padding: 20px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       width: 90%;
-      max-width: 400px;
+      max-width: 360px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 24px;
-      margin-bottom: 15px;
+    .wrapper h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
       color: #333;
     }
 
-    p {
-      color: #666;
+    .wrapper p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
     }
 
-    button {
-      margin-top: 20px;
+    .wrapper button {
       padding: 12px 24px;
       font-size: 16px;
       background-color: #28a745;
@@ -44,29 +50,31 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      width: 100%;
     }
 
-    button:hover {
+    .wrapper button:hover {
       background-color: #218838;
     }
 
     footer {
-      margin-top: 30px;
+      text-align: center;
       font-size: 12px;
-      color: #888;
+      color: #aaa;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>ðŸŽ Welcome to SafeEarn</h1>
-    <p>Click the button below to start earning rewards</p>
+
+  <div class="wrapper">
+    <h1>”9¼7 Start Earning</h1>
+    <p>Click below to activate ads and begin earning rewards</p>
     <button onclick="startAds()">Start Now</button>
+    <footer>0„8 2025 SafeEarn | Powered by Hridoy Skill</footer>
   </div>
 
-  <footer>Â© 2025 SafeEarn | Powered by Monetag</footer>
-
-  <!-- âœ… Push Notification (Zone: 9589439) -->
+  <!-- 7¼3 Push Notification Script (Zone: 9589439) -->
   <script>
     (s => {
       s.dataset.zone = '9589439';
@@ -74,7 +82,7 @@
     })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
   </script>
 
-  <!-- âœ… Interstitial Ad (Zone: 9589436) -->
+  <!-- 7¼3 Interstitial Script (Zone: 9589436) -->
   <script>
     (function(d,z,s){
       s.src='https://'+d+'/401/'+z;
@@ -83,17 +91,17 @@
     })('groleegni.net',9589436,document.createElement('script'));
   </script>
 
-  <!-- âœ… Popunder Ad (Zone: 9589429) -->
+  <!-- 7¼3 Popunder on Button Click (Zone: 9589429) -->
   <script>
     function startAds() {
-      // Popunder will trigger on click
       (s => {
         s.dataset.zone = '9589429';
         s.src = 'https://al5sm.com/tag.min.js';
       })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
 
-      alert("Thanks for starting. Ads will appear soon if available.");
+      alert("Thanks for starting. Ads will appear soon.");
     }
   </script>
+
 </body>
 </html>
