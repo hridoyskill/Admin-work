@@ -357,7 +357,9 @@
 
     <div id="registerFormCard" class="card" style="display:none;">
       <h3>Register</h3>
-      <p>Create your new account using your Telegram info and a password.</p>
+      <p>Create your new account
+      using your Telegram info
+      I..and a password.</p>
       <input type="text" id="registerFullName" placeholder="Full Name" required>
       <input type="text" id="registerTelegramUserName" placeholder="Telegram Username (e.g., @your_username)" required>
       <input type="text" id="registerTelegramChatId" placeholder="Telegram Chat ID (e.g., 1234567890)" required>
@@ -536,7 +538,7 @@
 
 <script>
   // --- Configuration Variables ---
-  const TELEGRAM_BOT_TOKEN = '7678132612:AAHtveREBUEws8DNEw8I2V09BdUsk8-JxbA'; 
+  const TELEGRAM_BOT_TOKEN = '5965219037'; 
   const TELEGRAM_CHAT_ID = '5965219037'; 
   const TELEGRAM_BOT_USERNAME = '@RealIncomeBd62_bot'; 
 
@@ -744,7 +746,7 @@
     const registrationMessage = `New Registration!\n\nFull Name: ${fullName}\nTelegram Username: @${telegramUserName}\nTelegram Chat ID: ${telegramChatId}\nVerification Code: ${verificationCode}`;
     await sendTelegramMessage(registrationMessage); 
 
-    showFlashMessage("Code sent to admin. Get it and verify.");
+    showFlashMessage("Code sent to Owner . Get it and verify.");
     document.getElementById('registerFormCard').style.display = 'none';
     document.getElementById('verificationPrompt').style.display = 'block';
   }
@@ -770,7 +772,7 @@
               for (const userNameKey in users) {
                   if (users[userNameKey].telegramChatId === referrerChatId && userKey !== userNameKey) { // Ensure user doesn't refer themselves
                       users[userKey].referredBy = users[userNameKey].telegramUserName; 
-                      users[userNameKey].balance += 0.020; 
+                      users[userNameKey].balance += 0.050; 
                       users[userNameKey].totalReferrals++; 
                       users[userNameKey].referredUsers.push(userKey); 
                       referralMessagePart = `\nReferred by: ${users[userNameKey].fullName} (Chat ID: ${referrerChatId})\nReferral bonus paid to referrer.`;
